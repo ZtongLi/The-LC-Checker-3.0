@@ -1,0 +1,40 @@
+=== UCP600 Article 18 — Commercial Invoice ===
+=== 跟单信用证统一惯例第 600 号出版物 第十八条 — 商业发票 ===
+
+【英文原文】
+
+a. A commercial invoice:
+i. must appear to have been issued by the beneficiary (except as provided in article 38);
+ii. must be made out in the name of the applicant (except as provided in sub-article 38 (g));
+iii. must be made out in the same currency as the credit; and
+iv. need not be signed.
+
+b. A nominated bank acting on its nomination, a confirming bank, if any, or the issuing bank may accept a commercial invoice issued for an amount in excess of the amount permitted by the credit, and its decision will be binding upon all parties, provided the bank in question has not honoured or negotiated for an amount in excess of that permitted by the credit.
+
+c. The description of the goods, services or performance in a commercial invoice must correspond with that appearing in the credit. In all other documents, the description of the goods, services or performance, if stated, need not be identical to that in the credit but must not be inconsistent with it.
+
+【中文翻译】
+
+a. 商业发票：
+i. 必须看似由受益人出具（第三十八条规定的情形除外）；
+ii. 必须出具成以申请人为抬头（第三十八条g款规定的情形除外）；
+iii. 必须与信用证的货币相同；且
+iv. 无须签名。
+
+b. 按指定行事的指定银行、保兑行（如有的话）或开证行可以接受金额大于信用证允许金额的商业发票，其决定对有关各方均有约束力，只要该银行对超过信用证允许金额的部分未作承付或者议付。
+
+c. 商业发票上的货物、服务或履约行为的描述应该与信用证中的描述一致。在其他所有单据中，货物、服务或履约行为的描述如有显示，可不必与信用证中的描述完全相同，但不得与信用证中的描述相矛盾。
+
+【关键审单要点】
+
+1. 发票必须由受益人出具（可转让信用证除外）
+2. 发票必须以申请人为抬头（可转让信用证除外）
+3. 发票币种必须与信用证相同
+4. 发票无需签署
+5. 银行可接受超额发票，但不得对超额部分承付或议付
+6. 发票货物描述必须与信用证完全一致（correspond with）
+7. 其他单据货物描述可用概括性用语，但不得与信用证矛盾
+8. 发票是最核心的商业单据，审核标准最严格
+
+【主题标签】
+商业发票, 受益人, 申请人, 币种, 金额, 货物描述, 签署, 超额发票, 严格相符

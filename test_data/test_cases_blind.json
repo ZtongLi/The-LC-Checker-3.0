@@ -1,0 +1,602 @@
+{
+  "document_title": "信用证智能审单系统测试数据集",
+  "version": "2.0-test",
+  "total_cases": 5,
+  "cases": [
+    {
+      "case_id": "case_11",
+      "case_description": "无不符点对照组：新西兰奶粉出口，验证系统是否会误报（Clean Presentation Control Group）",
+      "letter_of_credit": {
+        "lc_number": "LC-NZ-2025-8847",
+        "issuing_bank": "ANZ Banking Group Limited, Shanghai Branch",
+        "advising_bank": "Bank of New Zealand, Auckland Central Branch",
+        "applicant": { 
+          "name": "Shanghai Premium Nutrition Co., Ltd.", 
+          "address": "25F, Tower B, Global Trade Center, 800 Pudong Avenue, Shanghai 200120, China" 
+        },
+        "beneficiary": { 
+          "name": "Fonterra Dairy Export Corporation", 
+          "address": "109 Fanshawe Street, Auckland 1010, New Zealand" 
+        },
+        "currency": "NZD",
+        "amount": 485000.00,
+        "amount_tolerance": "+/- 0%",
+        "goods_description": "INFANT FORMULA POWDER STAGE 2 (6-12 MONTHS) - 10,000 CARTONS x 900G EACH, MANUFACTURED IN NEW ZEALAND, BATCH NO. NZ2025-IN-0456, EXPIRY DATE: 24 MONTHS FROM PRODUCTION DATE",
+        "latest_shipment_date": "2025-05-20",
+        "expiry_date": "2025-06-10",
+        "expiry_place": "Auckland, New Zealand",
+        "presentation_period": "15 days after shipment date but within credit validity",
+        "loading_port": "Auckland, New Zealand",
+        "discharge_port": "Shanghai, China",
+        "trade_terms": "CIF Shanghai",
+        "partial_shipment": "Not Allowed",
+        "transhipment": "Allowed",
+        "required_documents": [
+          "Signed Commercial Invoice in triplicate",
+          "Full set clean on board ocean Bills of Lading made out to order of issuing bank",
+          "Insurance Policy/Certificate for 110% of CIF value covering All Risks",
+          "Certificate of Origin issued by New Zealand Customs",
+          "Health Certificate issued by Ministry for Primary Industries, NZ",
+          "Quality Inspection Certificate issued by SGS New Zealand"
+        ],
+        "additional_conditions": [
+          "All documents to show LC number and issuing bank reference",
+          "Documents must be issued in English",
+          "Beneficiary's certificate certifying that goods are of New Zealand origin"
+        ],
+        "raw_text": "MT700 ISSUE OF A DOCUMENTARY CREDIT\nSENDER: ANZBAU3MXXX\nRECEIVER: BKNZNZ22XXX\nSEQUENCE OF TOTAL: 27/1/1\nFORM OF DOC. CREDIT: 40A IRREVOCABLE\nDOC. CREDIT NUMBER: 20 LC-NZ-2025-8847\nDATE OF ISSUE: 31C 250415\nAPPLICABLE RULES: 40E UCP LATEST VERSION\nDATE AND PLACE OF EXPIRY: 31D 250610 AUCKLAND, NEW ZEALAND\nAPPLICANT: 50 SHANGHAI PREMIUM NUTRITION CO., LTD.\n25F, TOWER B, GLOBAL TRADE CENTER\n800 PUDONG AVENUE, SHANGHAI 200120, CHINA\nBENEFICIARY: 59 FONTERRA DAIRY EXPORT CORPORATION\n109 FANSHAWE STREET, AUCKLAND 1010, NEW ZEALAND\nCURRENCY CODE, AMOUNT: 32B NZD485000,00\nAVAILABLE WITH/BY: 41D BANK OF NEW ZEALAND, AUCKLAND CENTRAL BRANCH\nBY NEGOTIATION\nDRAFTS AT: 42C SIGHT\nDRAWEE: 42A ANZBAU3MXXX\nPARTIAL SHIPMENTS: 43P NOT ALLOWED\nTRANSSHIPMENT: 43T ALLOWED\nLOADING IN CHARGE: 44A AUCKLAND, NEW ZEALAND\nFOR TRANSPORTATION TO: 44B SHANGHAI, CHINA\nLATEST DATE OF SHIPMENT: 44C 250520\nDESCRIPTION OF GOODS: 45A INFANT FORMULA POWDER STAGE 2 (6-12 MONTHS) - 10,000 CARTONS x 900G EACH, MANUFACTURED IN NEW ZEALAND, BATCH NO. NZ2025-IN-0456, EXPIRY DATE: 24 MONTHS FROM PRODUCTION DATE\nTRADE TERMS: CIF SHANGHAI\nDOCUMENTS REQUIRED: 46A\n1. SIGNED COMMERCIAL INVOICE IN TRIPLICATE\n2. FULL SET CLEAN ON BOARD OCEAN BILLS OF LADING MADE OUT TO ORDER OF ISSUING BANK BLANK ENDORSED MARKED FREIGHT PREPAID NOTIFY APPLICANT\n3. INSURANCE POLICY/CERTIFICATE FOR 110 PCT OF CIF VALUE COVERING ALL RISKS\n4. CERTIFICATE OF ORIGIN ISSUED BY NEW ZEALAND CUSTOMS\n5. HEALTH CERTIFICATE ISSUED BY MINISTRY FOR PRIMARY INDUSTRIES, NZ\n6. QUALITY INSPECTION CERTIFICATE ISSUED BY SGS NEW ZEALAND\nADDITIONAL CONDITIONS: 47A\nALL DOCUMENTS TO SHOW LC NUMBER AND ISSUING BANK REFERENCE\nDOCUMENTS MUST BE ISSUED IN ENGLISH\nBENEFICIARY'S CERTIFICATE CERTIFYING THAT GOODS ARE OF NEW ZEALAND ORIGIN\nPRESENTATION PERIOD: 48 15 DAYS AFTER SHIPMENT DATE BUT WITHIN CREDIT VALIDITY\nCONFIRMATION INSTRUCTIONS: 49 WITHOUT\nADVISING THROUGH: 57A BKNZNZ22XXX"
+      },
+      "commercial_invoice": {
+        "invoice_number": "FON-2025-EXP-0892",
+        "invoice_date": "2025-05-15",
+        "issued_by": "Fonterra Dairy Export Corporation, 109 Fanshawe Street, Auckland 1010, New Zealand",
+        "issued_to": "Shanghai Premium Nutrition Co., Ltd., 25F, Tower B, Global Trade Center, 800 Pudong Avenue, Shanghai 200120, China",
+        "currency": "NZD",
+        "goods": [
+          {
+            "description": "INFANT FORMULA POWDER STAGE 2 (6-12 MONTHS) - MANUFACTURED IN NEW ZEALAND, BATCH NO. NZ2025-IN-0456, EXPIRY DATE: 24 MONTHS FROM PRODUCTION DATE",
+            "quantity": 10000,
+            "unit": "CARTONS",
+            "unit_price": 48.50,
+            "amount": 485000.00
+          }
+        ],
+        "total_amount": 485000.00,
+        "trade_terms": "CIF SHANGHAI",
+        "raw_text": "FONTERRA DAIRY EXPORT CORPORATION\n109 FANSHAWE STREET, AUCKLAND 1010, NEW ZEALAND\nGST NO. 83-291-847\n\nCOMMERCIAL INVOICE\n\nInvoice No.: FON-2025-EXP-0892\nDate: May 15, 2025\n\nShipper/Exporter: Fonterra Dairy Export Corporation\n109 Fanshawe Street, Auckland 1010, New Zealand\n\nConsignee: Shanghai Premium Nutrition Co., Ltd.\n25F, Tower B, Global Trade Center\n800 Pudong Avenue, Shanghai 200120, China\n\nNotify Party: Same as consignee\n\nPort of Loading: Auckland, New Zealand\nPort of Discharge: Shanghai, China\nVessel/Voyage: MAERSK HORSBURGH / V.2508E\n\nLC No.: LC-NZ-2025-8847\nIssuing Bank: ANZ Banking Group Limited, Shanghai Branch\n\nDescription of Goods:\nINFANT FORMULA POWDER STAGE 2 (6-12 MONTHS)\nManufactured in New Zealand\nBatch No.: NZ2025-IN-0456\nExpiry Date: 24 months from production date\nQuantity: 10,000 cartons x 900g each\nUnit Price: NZD 48.50 per carton\nAmount: NZD 485,000.00\n\nTotal Amount: NZD 485,000.00\nTrade Terms: CIF Shanghai\n\nNumber of Originals: THREE (3)\n\nDeclaration: We hereby certify that the goods are of New Zealand origin and conform to the contractual specifications.\n\nAuthorized Signature: ___________________\nName: John Anderson\nTitle: Export Manager"
+      },
+      "bill_of_lading": {
+        "bl_number": "MAEU-NZ-7894562",
+        "shipper": "Fonterra Dairy Export Corporation, 109 Fanshawe Street, Auckland 1010, New Zealand",
+        "consignee": "TO ORDER OF ANZ BANKING GROUP LIMITED, SHANGHAI BRANCH",
+        "notify_party": "Shanghai Premium Nutrition Co., Ltd., 25F, Tower B, Global Trade Center, 800 Pudong Avenue, Shanghai 200120, China",
+        "vessel": "MAERSK HORSBURGH",
+        "voyage": "V.2508E",
+        "port_of_loading": "Auckland, New Zealand",
+        "port_of_discharge": "Shanghai, China",
+        "onboard_date": "2025-05-18",
+        "issue_date": "2025-05-19",
+        "goods_description": "INFANT FORMULA POWDER STAGE 2 (6-12 MONTHS) - 10,000 CARTONS x 900G EACH, BATCH NO. NZ2025-IN-0456, SHIPPERS LOAD STOW AND COUNT",
+        "number_of_packages": "TEN THOUSAND (10,000) CARTONS",
+        "gross_weight": "9,500.00 KGS",
+        "freight": "FREIGHT PREPAID",
+        "number_of_originals": "3/3",
+        "clean_onboard": true,
+        "carrier_signature": "MAERSK LINE NEW ZEALAND LTD. AS CARRIER",
+        "raw_text": "BILL OF LADING\n\nB/L No.: MAEU-NZ-7894562\n\nShipper: Fonterra Dairy Export Corporation\n109 Fanshawe Street, Auckland 1010, New Zealand\n\nConsignee: TO ORDER OF ANZ BANKING GROUP LIMITED, SHANGHAI BRANCH\n\nNotify Party: Shanghai Premium Nutrition Co., Ltd.\n25F, Tower B, Global Trade Center\n800 Pudong Avenue, Shanghai 200120, China\n\nPre-carriage by: N/A\nPlace of Receipt: Auckland, New Zealand\n\nOcean Vessel Voy. No.: MAERSK HORSBURGH V.2508E\nPort of Loading: Auckland, New Zealand\n\nPort of Discharge: Shanghai, China\nPlace of Delivery: Shanghai, China\n\nContainer No.: MSKU-789456-2 / Seal No.: NZ-Lock-445566\n\nDescription of Packages and Goods:\nINFANT FORMULA POWDER STAGE 2 (6-12 MONTHS)\n10,000 CARTONS x 900G EACH\nBATCH NO. NZ2025-IN-0456\nSHIPPERS LOAD STOW AND COUNT SAID TO CONTAIN\n\nTotal Number of Packages: TEN THOUSAND (10,000) CARTONS ONLY\n\nGross Weight: 9,500.00 KGS\nMeasurement: 45.00 CBM\n\nFreight & Charges: FREIGHT PREPAID\n\nOn Board Date: May 18, 2025\nDate of Issue: May 19, 2025\n\nNumber of Original Bs/L: THREE (3/3)\n\nPlace of Issue: Auckland, New Zealand\n\n* * * CLEAN ON BOARD * * *\n\nFor and on behalf of the carrier:\nMAERSK LINE NEW ZEALAND LTD. AS CARRIER\n\nAuthorized Signature: ___________________"
+      },
+      "insurance_policy": {
+        "policy_number": "VIP-NZ-2025-8847-EXP",
+        "insured": "Fonterra Dairy Export Corporation",
+        "insurance_amount": 533500.00,
+        "currency": "NZD",
+        "coverage": "ALL RISKS AS PER CIC OF PICC DATED 01/01/1981",
+        "goods_description": "INFANT FORMULA POWDER STAGE 2 (6-12 MONTHS) - 10,000 CARTONS x 900G EACH, BATCH NO. NZ2025-IN-0456",
+        "vessel": "MAERSK HORSBURGH V.2508E",
+        "from": "Auckland, New Zealand",
+        "to": "Shanghai, China",
+        "issue_date": "2025-05-17",
+        "claims_payable_at": "Shanghai, China",
+        "raw_text": "INSURANCE POLICY\n\nPolicy No.: VIP-NZ-2025-8847-EXP\n\nAssured: Fonterra Dairy Export Corporation\n109 Fanshawe Street, Auckland 1010, New Zealand\n\nInsured Amount: NZD 533,500.00 (SAY NEW ZEALAND DOLLARS FIVE HUNDRED THIRTY-THREE THOUSAND FIVE HUNDRED ONLY)\n\nInsurance Coverage: ALL RISKS AS PER CHINA INSTITUTE CARGO CLAUSES (CIC) OF THE PEOPLE'S INSURANCE COMPANY OF CHINA DATED 01/01/1981\n\nDescription of Goods:\nINFANT FORMULA POWDER STAGE 2 (6-12 MONTHS)\n10,000 CARTONS x 900G EACH\nBATCH NO. NZ2025-IN-0456\n\nConveyance: MAERSK HORSBURGH V.2508E\n\nFrom: Auckland, New Zealand\nTo: Shanghai, China\n\nConditions: Covering warehouse to warehouse including transit risks\n\nClaims Payable At: Shanghai, China\nIn the event of loss or damage which may result in a claim under this Policy, immediate notice must be given to:\nVero Insurance New Zealand Ltd., Shanghai Office\n\nDate of Issue: May 17, 2025\nPremium: As arranged\n\nPlace of Issue: Auckland, New Zealand\n\nFor and on behalf of:\nVERO INSURANCE NEW ZEALAND LTD.\n\nAuthorized Signature: ___________________\nName: Sarah Mitchell\nTitle: Underwriting Manager"
+      },
+      "presentation_date": "2025-05-25",
+      "expected_result": {
+        "has_discrepancies": false,
+        "discrepancies": [],
+        "overall_assessment": "无不符点。所有单据严格符合信用证条款、UCP600及ISBP745要求。单据之间信息一致，装运期、有效期、金额、货物描述均符合规定。提单为全套正本且显示'Clean On Board'，保险金额符合110% CIF价值要求，发票份数为三份正本。"
+      }
+    },
+    {
+      "case_id": "case_12",
+      "case_description": "单据份数不符点测试：医疗设备出口，发票份数不足（要求3份，仅提供2份）及全套提单份数不符",
+      "letter_of_credit": {
+        "lc_number": "LC-GBP-MED-2025-6612",
+        "issuing_bank": "HSBC Bank plc, London",
+        "advising_bank": "Lloyds Bank plc, Manchester Branch",
+        "applicant": { 
+          "name": "National Health Service Supply Chain Ltd", 
+          "address": "Friars House, Manor House Drive, Coventry CV1 2TE, United Kingdom" 
+        },
+        "beneficiary": { 
+          "name": "MedTech Precision Instruments Ltd", 
+          "address": "Unit 5, Oxford Science Park, Oxford OX4 4GA, United Kingdom" 
+        },
+        "currency": "GBP",
+        "amount": 325000.00,
+        "amount_tolerance": "+/- 5%",
+        "goods_description": "MRI SCANNERS MODEL MAGNETOM Sola 1.5T - 2 UNITS, WITH INSTALLATION AND TRAINING SERVICES, MANUFACTURED BY SIEMENS HEALTHINEERS, SERIAL NOS. UK-MRI-2025-0045, UK-MRI-2025-0046",
+        "latest_shipment_date": "2025-07-15",
+        "expiry_date": "2025-08-05",
+        "expiry_place": "London, UK",
+        "presentation_period": "21 days after shipment date",
+        "loading_port": "Southampton, UK",
+        "discharge_port": "Felixstowe, UK (Domestic)",
+        "trade_terms": "DAP Felixstowe",
+        "partial_shipment": "Not Allowed",
+        "transhipment": "Not Allowed",
+        "required_documents": [
+          "Signed Commercial Invoice in triplicate (3/3 originals)",
+          "Full set (3/3) clean on board Bills of Lading",
+          "Packing List in duplicate",
+          "Certificate of Inspection issued by Bureau Veritas UK",
+          "Installation Completion Certificate"
+        ],
+        "additional_conditions": [
+          "All documents must indicate LC number LC-GBP-MED-2025-6612",
+          "Invoice must certify goods are brand new and of UK origin"
+        ],
+        "raw_text": "MT700 ISSUE OF A DOCUMENTARY CREDIT\nSENDER: HBUKGB4BXXX\nRECEIVER: LOYDGB2LXXX\nSEQUENCE OF TOTAL: 27/1/1\nFORM OF DOC. CREDIT: 40A IRREVOCABLE\nDOC. CREDIT NUMBER: 20 LC-GBP-MED-2025-6612\nDATE OF ISSUE: 31C 250520\nAPPLICABLE RULES: 40E UCP LATEST VERSION\nDATE AND PLACE OF EXPIRY: 31D 250805 LONDON, UK\nAPPLICANT: 50 NATIONAL HEALTH SERVICE SUPPLY CHAIN LTD\nFRIARS HOUSE, MANOR HOUSE DRIVE\nCOVENTRY CV1 2TE, UNITED KINGDOM\nBENEFICIARY: 59 MEDTECH PRECISION INSTRUMENTS LTD\nUNIT 5, OXFORD SCIENCE PARK\nOXFORD OX4 4GA, UNITED KINGDOM\nCURRENCY CODE, AMOUNT: 32B GBP325000,00\nAVAILABLE WITH/BY: 41D LLOYDS BANK PLC, MANCHESTER BRANCH\nBY NEGOTIATION\nDRAFTS AT: 42C AT 60 DAYS SIGHT\nDRAWEE: 42A HBUKGB4BXXX\nPARTIAL SHIPMENTS: 43P NOT ALLOWED\nTRANSSHIPMENT: 43T NOT ALLOWED\nLOADING IN CHARGE: 44A SOUTHAMPTON, UK\nFOR TRANSPORTATION TO: 44B FELIXSTOWE, UK\nLATEST DATE OF SHIPMENT: 44C 250715\nDESCRIPTION OF GOODS: 45A MRI SCANNERS MODEL MAGNETOM SOLA 1.5T - 2 UNITS, WITH INSTALLATION AND TRAINING SERVICES, MANUFACTURED BY SIEMENS HEALTHINEERS, SERIAL NOS. UK-MRI-2025-0045, UK-MRI-2025-0046\nTRADE TERMS: DAP FELIXSTOWE\nDOCUMENTS REQUIRED: 46A\n1. SIGNED COMMERCIAL INVOICE IN TRIPLICATE (3/3 ORIGINALS)\n2. FULL SET (3/3) CLEAN ON BOARD BILLS OF LADING CONSIGNED TO APPLICANT MARKED FREIGHT PREPAID\n3. PACKING LIST IN DUPLICATE\n4. CERTIFICATE OF INSPECTION ISSUED BY BUREAU VERITAS UK\n5. INSTALLATION COMPLETION CERTIFICATE\nADDITIONAL CONDITIONS: 47A\nALL DOCUMENTS MUST INDICATE LC NUMBER LC-GBP-MED-2025-6612\nINVOICE MUST CERTIFY GOODS ARE BRAND NEW AND OF UK ORIGIN\nPRESENTATION PERIOD: 48 21 DAYS AFTER SHIPMENT DATE\nCONFIRMATION INSTRUCTIONS: 49 WITHOUT"
+      },
+      "commercial_invoice": {
+        "invoice_number": "MTI-UK-2025-0456",
+        "invoice_date": "2025-07-10",
+        "issued_by": "MedTech Precision Instruments Ltd, Unit 5, Oxford Science Park, Oxford OX4 4GA, United Kingdom",
+        "issued_to": "National Health Service Supply Chain Ltd, Friars House, Manor House Drive, Coventry CV1 2TE, United Kingdom",
+        "currency": "GBP",
+        "goods": [
+          {
+            "description": "MRI SCANNERS MODEL MAGNETOM Sola 1.5T - 2 UNITS WITH INSTALLATION AND TRAINING SERVICES, MANUFACTURED BY SIEMENS HEALTHINEERS, SERIAL NOS. UK-MRI-2025-0045, UK-MRI-2025-0046",
+            "quantity": 2,
+            "unit": "UNITS",
+            "unit_price": 162500.00,
+            "amount": 325000.00
+          }
+        ],
+        "total_amount": 325000.00,
+        "trade_terms": "DAP Felixstowe",
+        "raw_text": "MEDTECH PRECISION INSTRUMENTS LTD\nUNIT 5, OXFORD SCIENCE PARK\nOXFORD OX4 4GA, UNITED KINGDOM\nVAT NO. GB 291 8467 22\n\nCOMMERCIAL INVOICE\n\nInvoice No.: MTI-UK-2025-0456\nDate: July 10, 2025\n\nShipper: MedTech Precision Instruments Ltd\nUnit 5, Oxford Science Park\nOxford OX4 4GA, United Kingdom\n\nConsignee: National Health Service Supply Chain Ltd\nFriars House, Manor House Drive\nCoventry CV1 2TE, United Kingdom\n\nNotify Party: Same as consignee\n\nPort of Loading: Southampton, UK\nPort of Discharge: Felixstowe, UK\nVessel/Voyage: STENA HOLLANDICA / V.2515\n\nLC No.: LC-GBP-MED-2025-6612\nIssuing Bank: HSBC Bank plc, London\n\nDescription of Goods:\nMRI SCANNERS MODEL MAGNETOM Sola 1.5T\nManufactured by Siemens Healthineers\nSerial Nos.: UK-MRI-2025-0045, UK-MRI-2025-0046\nIncluding installation and training services\nQuantity: 2 Units\nUnit Price: GBP 162,500.00 per unit\nTotal Amount: GBP 325,000.00\n\nTotal Invoice Value: GBP 325,000.00\nTrade Terms: DAP Felixstowe\n\nNumber of Original Invoices: TWO (2) ORIGINALS\n\nCertification: We hereby certify that the goods are brand new and of UK origin.\n\nAuthorized Signature: ___________________\nName: Dr. James Richardson\nTitle: Sales Director"
+      },
+      "bill_of_lading": {
+        "bl_number": "GB-FEED-2025-3344",
+        "shipper": "MedTech Precision Instruments Ltd, Unit 5, Oxford Science Park, Oxford OX4 4GA, United Kingdom",
+        "consignee": "National Health Service Supply Chain Ltd, Friars House, Manor House Drive, Coventry CV1 2TE, United Kingdom",
+        "notify_party": "Same as consignee",
+        "vessel": "STENA HOLLANDICA",
+        "voyage": "V.2515",
+        "port_of_loading": "Southampton, UK",
+        "port_of_discharge": "Felixstowe, UK",
+        "onboard_date": "2025-07-12",
+        "issue_date": "2025-07-13",
+        "goods_description": "MRI SCANNERS MODEL MAGNETOM SOLA 1.5T - 2 UNITS IN PROTECTIVE CRATES, SERIAL NOS. UK-MRI-2025-0045, UK-MRI-2025-0046, SHIPPERS LOAD STOW AND COUNT, SAY TWO UNITS ONLY",
+        "number_of_packages": "TWO (2) CRATES",
+        "gross_weight": "12,800.00 KGS",
+        "freight": "FREIGHT PREPAID",
+        "number_of_originals": "2/3",
+        "clean_onboard": true,
+        "carrier_signature": "STENA LINE LIMITED AS CARRIER",
+        "raw_text": "BILL OF LADING\n\nB/L No.: GB-FEED-2025-3344\n\nShipper: MedTech Precision Instruments Ltd\nUnit 5, Oxford Science Park\nOxford OX4 4GA, United Kingdom\n\nConsignee: National Health Service Supply Chain Ltd\nFriars House, Manor House Drive\nCoventry CV1 2TE, United Kingdom\n\nNotify Party: Same as consignee\n\nVessel/Voyage: STENA HOLLANDICA V.2515\nPort of Loading: Southampton, UK\nPort of Discharge: Felixstowe, UK\n\nMarks & Numbers: NHS-SC-6612\n\nDescription of Goods:\nMRI SCANNERS MODEL MAGNETOM SOLA 1.5T\n2 UNITS IN PROTECTIVE CRATES\nSERIAL NOS. UK-MRI-2025-0045, UK-MRI-2025-0046\nSHIPPERS LOAD STOW AND COUNT\nSAY TWO UNITS ONLY\n\nTotal Packages: TWO (2) CRATES ONLY\nGross Weight: 12,800.00 KGS\nMeasurement: 85.00 CBM\n\nFreight: FREIGHT PREPAID\n\nOn Board Date: July 12, 2025\nDate of Issue: July 13, 2025\n\nNumber of Original Bs/L: TWO (2/3) THIRD ORIGINAL RETAINED BY CARRIER\n\nPlace of Issue: Southampton, UK\n\nShipped on board in apparent good order and condition\n\nFor Stena Line Limited as Carrier:\n___________________\nAuthorized Signature"
+      },
+      "insurance_policy": {
+        "policy_number": "AVIVA-GBP-MED-2025-6612",
+        "insured": "MedTech Precision Instruments Ltd",
+        "insurance_amount": 357500.00,
+        "currency": "GBP",
+        "coverage": "ALL RISKS INCLUDING ELECTROMAGNETIC DAMAGE",
+        "goods_description": "MRI SCANNERS MODEL MAGNETOM SOLA 1.5T - 2 UNITS, SERIAL NOS. UK-MRI-2025-0045, UK-MRI-2025-0046",
+        "vessel": "STENA HOLLANDICA V.2515",
+        "from": "Southampton, UK",
+        "to": "Felixstowe, UK",
+        "issue_date": "2025-07-11",
+        "claims_payable_at": "London, UK",
+        "raw_text": "MARINE INSURANCE CERTIFICATE\n\nCertificate No.: AVIVA-GBP-MED-2025-6612\n\nAssured: MedTech Precision Instruments Ltd\nUnit 5, Oxford Science Park\nOxford OX4 4GA, United Kingdom\n\nInsured Amount: GBP 357,500.00 (ONE HUNDRED TEN PERCENT OF CIF VALUE)\n\nCoverage: ALL RISKS INCLUDING ELECTROMAGNETIC DAMAGE AS PER INSTITUTE CARGO CLAUSES (A) 1/1/82\n\nGoods Description:\nMRI SCANNERS MODEL MAGNETOM SOLA 1.5T\n2 UNITS\nSERIAL NOS. UK-MRI-2025-0045, UK-MRI-2025-0046\n\nVessel: STENA HOLLANDICA V.2515\nVoyage: Southampton to Felixstowe\n\nFrom: Southampton, UK\nTo: Felixstowe, UK\n\nConditions: Warehouse to warehouse coverage\n\nClaims Payable At: London, UK at office of Aviva Insurance Ltd\n\nDate of Issue: July 11, 2025\n\nFor Aviva Insurance Ltd:\n___________________\nUnderwriting Agent"
+      },
+      "presentation_date": "2025-07-28",
+      "expected_result": {
+        "has_discrepancies": true,
+        "discrepancies": [
+          {
+            "document": "Commercial Invoice",
+            "field": "Number of Originals",
+            "description": "信用证要求提交三份正本发票（Signed Commercial Invoice in triplicate (3/3 originals)），但发票实际仅显示提供两份正本（TWO (2) ORIGINALS），缺少一份正本发票。",
+            "ucp_reference": "UCP600 Article 18(b)",
+            "severity": "严重"
+          },
+          {
+            "document": "Bill of Lading",
+            "field": "Number of Originals",
+            "description": "信用证要求全套提单（Full set (3/3) clean on board Bills of Lading），但提单显示仅两份正本（TWO (2/3) THIRD ORIGINAL RETAINED BY CARRIER），未提供全套三份正本提单。根据UCP600，全套提单指承运人签发的所有正本提单，受益人必须提交全部正本。",
+            "ucp_reference": "UCP600 Article 20(a)(ii)",
+            "severity": "严重"
+          }
+        ],
+        "overall_assessment": "存在两份严重不符点。发票份数不足构成单证不符，提单未提交全套正本构成运输单据不符。银行有权拒付。建议受益人补交缺失的单据正本。"
+      }
+    },
+    {
+      "case_id": "case_13",
+      "case_description": "受益人名称/地址细微差异测试：印尼煤炭出口，Co., Ltd.与Company Limited拼写差异，地址门牌号不一致",
+      "letter_of_credit": {
+        "lc_number": "LC-IDR-2025-7788",
+        "issuing_bank": "Bank Mandiri, Jakarta Headquarters",
+        "advising_bank": "Bank Central Asia, Surabaya Branch",
+        "applicant": { 
+          "name": "Guangdong Power Generation Corp", 
+          "address": "No. 75 Zhongshan Road, Yuexiu District, Guangzhou 510030, China" 
+        },
+        "beneficiary": { 
+          "name": "PT Indocoal Mining Company Limited", 
+          "address": "Jl. Sudirman No. 45, 12th Floor, Jakarta 12190, Indonesia" 
+        },
+        "currency": "USD",
+        "amount": 1250000.00,
+        "amount_tolerance": "+/- 10%",
+        "goods_description": "STEAM COAL IN BULK - 55,000 METRIC TONS (+/- 10 PCT), GCV 5,500 KCAL/KG (ARB), TOTAL MOISTURE MAX 18%, ASH MAX 12%, SULPHUR MAX 0.8%, ORIGIN: EAST KALIMANTAN, INDONESIA",
+        "latest_shipment_date": "2025-08-20",
+        "expiry_date": "2025-09-10",
+        "expiry_place": "Jakarta, Indonesia",
+        "presentation_period": "15 days after shipment",
+        "loading_port": "Balikpapan, East Kalimantan, Indonesia",
+        "discharge_port": "Guangzhou, China",
+        "trade_terms": "CFR Guangzhou",
+        "partial_shipment": "Allowed",
+        "transhipment": "Allowed",
+        "required_documents": [
+          "Commercial Invoice in 3 copies",
+          "Full set clean on board Ocean Bill of Lading",
+          "Certificate of Origin issued by Indonesian Chamber of Commerce",
+          "Quality Certificate issued by Sucofindo (Persero)",
+          "Weight Certificate issued at loading port"
+        ],
+        "additional_conditions": [
+          "Beneficiary must be PT Indocoal Mining Company Limited",
+          "All documents to show identical beneficiary name and address"
+        ],
+        "raw_text": "MT700 ISSUE OF A DOCUMENTARY CREDIT\nSENDER: BMRIIDJAXXX\nRECEIVER: CENAIDJAXXX\nSEQUENCE OF TOTAL: 27/1/1\nFORM OF DOC. CREDIT: 40A IRREVOCABLE\nDOC. CREDIT NUMBER: 20 LC-IDR-2025-7788\nDATE OF ISSUE: 31C 250705\nAPPLICABLE RULES: 40E UCP LATEST VERSION\nDATE AND PLACE OF EXPIRY: 31D 250910 JAKARTA, INDONESIA\nAPPLICANT: 50 GUANGDONG POWER GENERATION CORP\nNO. 75 ZHONGSHAN ROAD, YUEXIU DISTRICT\nGUANGZHOU 510030, CHINA\nBENEFICIARY: 59 PT INDOCOAL MINING COMPANY LIMITED\nJL. SUDIRMAN NO. 45, 12TH FLOOR\nJAKARTA 12190, INDONESIA\nCURRENCY CODE, AMOUNT: 32B USD1250000,00\nAVAILABLE WITH/BY: 41D BANK CENTRAL ASIA, SURABAYA BRANCH\nBY NEGOTIATION\nDRAFTS AT: 42C SIGHT\nDRAWEE: 42A BMRIIDJAXXX\nPARTIAL SHIPMENTS: 43P ALLOWED\nTRANSSHIPMENT: 43T ALLOWED\nLOADING IN CHARGE: 44A BALIKPAPAN, EAST KALIMANTAN, INDONESIA\nFOR TRANSPORTATION TO: 44B GUANGZHOU, CHINA\nLATEST DATE OF SHIPMENT: 44C 250820\nDESCRIPTION OF GOODS: 45A STEAM COAL IN BULK - 55,000 METRIC TONS (+/- 10 PCT), GCV 5,500 KCAL/KG (ARB), TOTAL MOISTURE MAX 18%, ASH MAX 12%, SULPHUR MAX 0.8%, ORIGIN: EAST KALIMANTAN, INDONESIA\nTRADE TERMS: CFR GUANGZHOU\nDOCUMENTS REQUIRED: 46A\n1. COMMERCIAL INVOICE IN 3 COPIES\n2. FULL SET CLEAN ON BOARD OCEAN BILL OF LADING MADE OUT TO ORDER BLANK ENDORSED MARKED FREIGHT PREPAID NOTIFY APPLICANT\n3. CERTIFICATE OF ORIGIN ISSUED BY INDONESIAN CHAMBER OF COMMERCE\n4. QUALITY CERTIFICATE ISSUED BY SUCOFINDO (PERSERO)\n5. WEIGHT CERTIFICATE ISSUED AT LOADING PORT\nADDITIONAL CONDITIONS: 47A\nBENEFICIARY MUST BE PT INDOCOAL MINING COMPANY LIMITED\nALL DOCUMENTS TO SHOW IDENTICAL BENEFICIARY NAME AND ADDRESS\nPRESENTATION PERIOD: 48 15 DAYS AFTER SHIPMENT\nCONFIRMATION INSTRUCTIONS: 49 WITHOUT"
+      },
+      "commercial_invoice": {
+        "invoice_number": "ICM-2025-08-Balikpapan",
+        "invoice_date": "2025-08-15",
+        "issued_by": "PT Indocoal Mining Co., Ltd., Jl. Sudirman No. 45, 12th Floor, Jakarta 12190, Indonesia",
+        "issued_to": "Guangdong Power Generation Corp, No. 75 Zhongshan Road, Yuexiu District, Guangzhou 510030, China",
+        "currency": "USD",
+        "goods": [
+          {
+            "description": "STEAM COAL IN BULK, GCV 5,500 KCAL/KG (ARB), TOTAL MOISTURE MAX 18%, ASH MAX 12%, SULPHUR MAX 0.8%, ORIGIN: EAST KALIMANTAN, INDONESIA",
+            "quantity": 55000,
+            "unit": "METRIC TONS",
+            "unit_price": 22.727,
+            "amount": 1250000.00
+          }
+        ],
+        "total_amount": 1250000.00,
+        "trade_terms": "CFR Guangzhou",
+        "raw_text": "PT INDOCOAL MINING CO., LTD.\nJL. SUDIRMAN NO. 45, 12TH FLOOR\nJAKARTA 12190, INDONESIA\nNPWP: 02.345.678.9-012.000\n\nCOMMERCIAL INVOICE\n\nInvoice No.: ICM-2025-08-Balikpapan\nDate: August 15, 2025\n\nShipper/Exporter: PT Indocoal Mining Co., Ltd.\nJl. Sudirman No. 45, 12th Floor\nJakarta 12190, Indonesia\n\nConsignee: Guangdong Power Generation Corp\nNo. 75 Zhongshan Road, Yuexiu District\nGuangzhou 510030, China\n\nNotify Party: Same as consignee\n\nPort of Loading: Balikpapan, East Kalimantan, Indonesia\nPort of Discharge: Guangzhou, China\nVessel/Voyage: MV COAL TRANSPORTER / V.2025-08\n\nLC No.: LC-IDR-2025-7788\nIssuing Bank: Bank Mandiri, Jakarta Headquarters\n\nDescription of Goods:\nSteam Coal in Bulk\nSpecifications: GCV 5,500 Kcal/Kg (ARB), Total Moisture Max 18%,\nAsh Max 12%, Sulphur Max 0.8%\nOrigin: East Kalimantan, Indonesia\nQuantity: 55,000 Metric Tons (+/- 10% at owner's option)\nUnit Price: USD 22.727 per Metric Ton\nTotal Amount: USD 1,250,000.00\n\nTotal Invoice Value: USD 1,250,000.00\nTrade Terms: CFR Guangzhou\n\nWe certify that goods are of Indonesian origin and meet contractual specifications.\n\nFor PT Indocoal Mining Co., Ltd.:\n___________________\nDirector"
+      },
+      "bill_of_lading": {
+        "bl_number": "BL-ID-2025-888777",
+        "shipper": "PT Indocoal Mining Corp., Jl. Sudirman Kav. 45, Floor 12, Jakarta 12190, Indonesia",
+        "consignee": "TO ORDER",
+        "notify_party": "Guangdong Power Generation Corp, No. 75 Zhongshan Road, Yuexiu District, Guangzhou 510030, China",
+        "vessel": "MV COAL TRANSPORTER",
+        "voyage": "V.2025-08",
+        "port_of_loading": "Balikpapan, East Kalimantan, Indonesia",
+        "port_of_discharge": "Guangzhou, China",
+        "onboard_date": "2025-08-18",
+        "issue_date": "2025-08-19",
+        "goods_description": "STEAM COAL IN BULK - 55,000 METRIC TONS APPROX, GCV 5,500 KCAL/KG, SHIPPED IN BULK, FREIGHT PREPAID, SHIPPERS LOAD STOW AND COUNT",
+        "number_of_packages": "BULK CARGO - 55,000 MT",
+        "gross_weight": "55,000.00 MTS",
+        "freight": "FREIGHT PREPAID",
+        "number_of_originals": "3/3",
+        "clean_onboard": true,
+        "carrier_signature": "PT PELAYARAN NASIONAL INDONESIA AS CARRIER",
+        "raw_text": "BILL OF LADING\n\nB/L No.: BL-ID-2025-888777\n\nShipper: PT Indocoal Mining Corp.\nJl. Sudirman Kav. 45, Floor 12\nJakarta 12190, Indonesia\n\nConsignee: TO ORDER\n\nNotify Party: Guangdong Power Generation Corp\nNo. 75 Zhongshan Road, Yuexiu District\nGuangzhou 510030, China\n\nPre-carriage by: N/A\nPlace of Receipt: Balikpapan, East Kalimantan\n\nOcean Vessel: MV COAL TRANSPORTER\nVoy. No.: V.2025-08\nPort of Loading: Balikpapan, East Kalimantan, Indonesia\nPort of Discharge: Guangzhou, China\nPlace of Delivery: Guangzhou, China\n\nDescription of Goods:\nSteam Coal in Bulk\n55,000 Metric Tons (approx)\nGCV: 5,500 Kcal/Kg\nShipped in apparent good order and condition\nShippers load stow and count\nFreight Prepaid\n\nTotal Quantity: 55,000 MTS\n\nFreight & Charges: As per charter party\nOn Board Date: August 18, 2025\nPlace of Issue: Balikpapan, Indonesia\nDate of Issue: August 19, 2025\n\nNumber of Original Bs/L: THREE (3/3)\n\nFor PT Pelayaran Nasional Indonesia as Carrier:\n___________________\nMaster"
+      },
+      "insurance_policy": {
+        "policy_number": "ASR-ID-2025-7788-COAL",
+        "insured": "PT Indocoal Mining Company Ltd",
+        "insurance_amount": 1375000.00,
+        "currency": "USD",
+        "coverage": "INSTITUTE CARGO CLAUSES (A) PLUS SRCC",
+        "goods_description": "STEAM COAL IN BULK - 55,000 METRIC TONS, GCV 5,500 KCAL/KG",
+        "vessel": "MV COAL TRANSPORTER V.2025-08",
+        "from": "Balikpapan, Indonesia",
+        "to": "Guangzhou, China",
+        "issue_date": "2025-08-14",
+        "claims_payable_at": "Jakarta, Indonesia",
+        "raw_text": "INSURANCE POLICY\n\nPolicy No.: ASR-ID-2025-7788-COAL\n\nAssured: PT Indocoal Mining Company Ltd\nJl. Sudirman No. 45, 12th Floor\nJakarta 12190, Indonesia\n\nInsured Amount: USD 1,375,000.00 (110% of CFR Value)\n\nCoverage: Institute Cargo Clauses (A) dated 01/01/82 plus S.R.C.C.\n\nDescription of Goods:\nSteam Coal in Bulk\n55,000 Metric Tons\nGCV: 5,500 Kcal/Kg (ARB)\n\nConveyance: MV COAL TRANSPORTER V.2025-08\n\nFrom: Balikpapan, Indonesia\nTo: Guangzhou, China\n\nConditions: Warehouse to warehouse clause included\n\nClaims Payable At: Jakarta, Indonesia\n\nDate of Issue: August 14, 2025\n\nFor Asuransi Sinar Mas:\n___________________\nUnderwriter"
+      },
+      "presentation_date": "2025-08-28",
+      "expected_result": {
+        "has_discrepancies": true,
+        "discrepancies": [
+          {
+            "document": "Commercial Invoice",
+            "field": "Beneficiary Name",
+            "description": "发票显示受益人名称为'PT Indocoal Mining Co., Ltd.'，而信用证规定为'PT Indocoal Mining Company Limited'。虽然'Co., Ltd.'是'Company Limited'的缩写形式，但根据UCP600，单据中受益人名称必须与信用证严格一致，不允许使用缩写形式代替全称，除非信用证本身使用了缩写。",
+            "ucp_reference": "UCP600 Article 18(c)",
+            "severity": "严重"
+          },
+          {
+            "document": "Bill of Lading",
+            "field": "Shipper Name and Address",
+            "description": "提单显示发货人为'PT Indocoal Mining Corp.'（且地址为Jl. Sudirman Kav. 45, Floor 12），与信用证受益人名称'PT Indocoal Mining Company Limited'及地址'Jl. Sudirman No. 45, 12th Floor'不一致。名称使用了'Corp.'代替'Company Limited'，地址中'Kav.'（Kavling）与'No.'不同，'Floor 12'与'12th Floor'表述差异。根据UCP600，运输单据发货人名称和地址必须与信用证受益人严格一致。",
+            "ucp_reference": "UCP600 Article 14(j) and Article 20(a)(iii)",
+            "severity": "严重"
+          },
+          {
+            "document": "Insurance Policy",
+            "field": "Insured Name",
+            "description": "保险单显示被保险人为'PT Indocoal Mining Company Ltd'，而信用证受益人名称为'PT Indocoal Mining Company Limited'。'Ltd'与'Limited'虽含义相同，但拼写形式不同，构成单证不符。",
+            "ucp_reference": "UCP600 Article 14(d)",
+            "severity": "一般"
+          }
+        ],
+        "overall_assessment": "存在三处不符点，均涉及受益人名称或地址的不一致。发票使用缩写'Co., Ltd.'而非全称'Company Limited'；提单使用了'Corp.'且地址表述不同；保险单使用了'Ltd'而非'Limited'。这些细微差异在严格的单证审核中均构成不符点，银行有权拒付。"
+      }
+    },
+    {
+      "case_id": "case_14",
+      "case_description": "分批装运违规+贸易术语不符测试：西班牙瓷砖出口，信用证禁止分批但提单显示两批装运，且发票贸易术语CIF与信用证FOB不一致",
+      "letter_of_credit": {
+        "lc_number": "LC-EUR-BUILD-2025-9921",
+        "issuing_bank": "Banco Santander, S.A., Madrid",
+        "advising_bank": "CaixaBank, Barcelona Branch",
+        "applicant": { 
+          "name": "Constructores Modernos SA", 
+          "address": "Calle de Alcalá 527, 28027 Madrid, Spain" 
+        },
+        "beneficiary": { 
+          "name": "Cerámicas del Mediterráneo SL", 
+          "address": "Polígono Industrial El Pla, Avda. de la Cerámica 23, 12540 Villareal, Castellón, Spain" 
+        },
+        "currency": "EUR",
+        "amount": 285000.00,
+        "amount_tolerance": "+/- 5%",
+        "goods_description": "PORCELAIN FLOOR TILES - 2,000 PALLETS OF 50 SQM EACH, SIZE 60x60 CM, QUALITY PREMIUM GRADE, COLOR: BEIGE AND GREY MIX, MANUFACTURED IN CASTELLÓN, SPAIN",
+        "latest_shipment_date": "2025-06-30",
+        "expiry_date": "2025-07-20",
+        "expiry_place": "Barcelona, Spain",
+        "presentation_period": "21 days after shipment but before expiry",
+        "loading_port": "Valencia, Spain",
+        "discharge_port": "Lisbon, Portugal",
+        "trade_terms": "FOB Valencia",
+        "partial_shipment": "Not Allowed",
+        "transhipment": "Allowed",
+        "required_documents": [
+          "Commercial Invoice in triplicate",
+          "Full set clean on board Ocean Bills of Lading",
+          "Packing List showing details of each pallet",
+          "Certificate of Origin issued by Chamber of Commerce Castellón"
+        ],
+        "additional_conditions": [
+          "Partial shipments strictly prohibited",
+          "B/L must evidence FOB terms and notify applicant immediately upon shipment"
+        ],
+        "raw_text": "MT700 ISSUE OF A DOCUMENTARY CREDIT\nSENDER: BSCHESMMXXX\nRECEIVER: CAIXESBBXXX\nSEQUENCE OF TOTAL: 27/1/1\nFORM OF DOC. CREDIT: 40A IRREVOCABLE\nDOC. CREDIT NUMBER: 20 LC-EUR-BUILD-2025-9921\nDATE OF ISSUE: 31C 250510\nAPPLICABLE RULES: 40E UCP LATEST VERSION\nDATE AND PLACE OF EXPIRY: 31D 250720 BARCELONA, SPAIN\nAPPLICANT: 50 CONSTRUCTORES MODERNOS SA\nCALLE DE ALCALÁ 527\n28027 MADRID, SPAIN\nBENEFICIARY: 59 CERÁMICAS DEL MEDITERRÁNEO SL\nPOLÍGONO INDUSTRIAL EL PLA\nAVDA. DE LA CERÁMICA 23\n12540 VILLAREAL, CASTELLÓN, SPAIN\nCURRENCY CODE, AMOUNT: 32B EUR285000,00\nAVAILABLE WITH/BY: 41D CAIXABANK, BARCELONA BRANCH\nBY NEGOTIATION\nDRAFTS AT: 42C AT 30 DAYS SIGHT\nDRAWEE: 42A BSCHESMMXXX\nPARTIAL SHIPMENTS: 43P NOT ALLOWED\nTRANSSHIPMENT: 43T ALLOWED\nLOADING IN CHARGE: 44A VALENCIA, SPAIN\nFOR TRANSPORTATION TO: 44B LISBON, PORTUGAL\nLATEST DATE OF SHIPMENT: 44C 250630\nDESCRIPTION OF GOODS: 45A PORCELAIN FLOOR TILES - 2,000 PALLETS OF 50 SQM EACH, SIZE 60x60 CM, QUALITY PREMIUM GRADE, COLOR: BEIGE AND GREY MIX, MANUFACTURED IN CASTELLÓN, SPAIN\nTRADE TERMS: FOB VALENCIA\nDOCUMENTS REQUIRED: 46A\n1. COMMERCIAL INVOICE IN TRIPLICATE\n2. FULL SET CLEAN ON BOARD OCEAN BILLS OF LADING MADE OUT TO ORDER OF ISSUING BANK MARKED FREIGHT COLLECT NOTIFY APPLICANT\n3. PACKING LIST SHOWING DETAILS OF EACH PALLET\n4. CERTIFICATE OF ORIGIN ISSUED BY CHAMBER OF COMMERCE CASTELLÓN\nADDITIONAL CONDITIONS: 47A\nPARTIAL SHIPMENTS STRICTLY PROHIBITED\nB/L MUST EVIDENCE FOB TERMS AND NOTIFY APPLICANT IMMEDIATELY UPON SHIPMENT\nPRESENTATION PERIOD: 48 21 DAYS AFTER SHIPMENT BUT BEFORE EXPIRY\nCONFIRMATION INSTRUCTIONS: 49 WITHOUT"
+      },
+      "commercial_invoice": {
+        "invoice_number": "CDM-2025-TILE-1567",
+        "invoice_date": "2025-06-25",
+        "issued_by": "Cerámicas del Mediterráneo SL, Polígono Industrial El Pla, Avda. de la Cerámica 23, 12540 Villareal, Castellón, Spain",
+        "issued_to": "Constructores Modernos SA, Calle de Alcalá 527, 28027 Madrid, Spain",
+        "currency": "EUR",
+        "goods": [
+          {
+            "description": "PORCELAIN FLOOR TILES - 2,000 PALLETS OF 50 SQM EACH, SIZE 60x60 CM, QUALITY PREMIUM GRADE, COLOR: BEIGE AND GREY MIX, MANUFACTURED IN CASTELLÓN, SPAIN",
+            "quantity": 2000,
+            "unit": "PALLETS",
+            "unit_price": 142.50,
+            "amount": 285000.00
+          }
+        ],
+        "total_amount": 285000.00,
+        "trade_terms": "CIF Lisbon",
+        "raw_text": "CERÁMICAS DEL MEDITERRÁNEO SL\nPOLÍGONO INDUSTRIAL EL PLA\nAVDA. DE LA CERÁMICA 23\n12540 VILLAREAL, CASTELLÓN, SPAIN\nCIF: B-12345678\n\nCOMMERCIAL INVOICE\n\nInvoice No.: CDM-2025-TILE-1567\nDate: June 25, 2025\n\nShipper: Cerámicas del Mediterráneo SL\nPolígono Industrial El Pla\nAvda. de la Cerámica 23\n12540 Villareal, Castellón, Spain\n\nConsignee: Constructores Modernos SA\nCalle de Alcalá 527\n28027 Madrid, Spain\n\nNotify Party: Same as consignee\n\nPort of Loading: Valencia, Spain\nPort of Discharge: Lisbon, Portugal\n\nLC No.: LC-EUR-BUILD-2025-9921\nIssuing Bank: Banco Santander, S.A., Madrid\n\nDescription of Goods:\nPorcelain Floor Tiles\n2,000 Pallets of 50 SQM each\nSize: 60x60 cm\nQuality: Premium Grade\nColor: Beige and Grey Mix\nManufactured in Castellón, Spain\n\nQuantity: 2,000 Pallets\nUnit Price: EUR 142.50 per pallet\nTotal Amount: EUR 285,000.00\n\nShipment Details:\nLOT 1: 1,200 pallets shipped on June 18, 2025\nLOT 2: 800 pallets shipped on June 22, 2025\n\nTotal Value: EUR 285,000.00\nTrade Terms: CIF Lisbon\n\nFor Cerámicas del Mediterráneo SL:\n___________________\nExport Manager"
+      },
+      "bill_of_lading": {
+        "bl_number": "BL-ES-2025-TWOPART",
+        "shipper": "Cerámicas del Mediterráneo SL, Polígono Industrial El Pla, Avda. de la Cerámica 23, 12540 Villareal, Castellón, Spain",
+        "consignee": "TO ORDER OF BANCO SANTANDER, S.A.",
+        "notify_party": "Constructores Modernos SA, Calle de Alcalá 527, 28027 Madrid, Spain",
+        "vessel": "MV IBERIAN TRADER",
+        "voyage": "V.25176",
+        "port_of_loading": "Valencia, Spain",
+        "port_of_discharge": "Lisbon, Portugal",
+        "onboard_date": "2025-06-22",
+        "issue_date": "2025-06-23",
+        "goods_description": "PORCELAIN FLOOR TILES - 2,000 PALLETS (LOT 1: 1,200 PALLETS LOADED JUNE 18; LOT 2: 800 PALLETS LOADED JUNE 22), SIZE 60x60CM, SHIPPED ON BOARD IN TWO LOTS, FREIGHT COLLECT",
+        "number_of_packages": "TWO THOUSAND (2,000) PALLETS",
+        "gross_weight": "1,800,000.00 KGS",
+        "freight": "FREIGHT COLLECT",
+        "number_of_originals": "3/3",
+        "clean_onboard": true,
+        "carrier_signature": "MSC MEDITERRANEAN SHIPPING COMPANY SA AS CARRIER",
+        "raw_text": "BILL OF LADING\n\nB/L No.: BL-ES-2025-TWOPART\n\nShipper: Cerámicas del Mediterráneo SL\nPolígono Industrial El Pla\nAvda. de la Cerámica 23\n12540 Villareal, Castellón, Spain\n\nConsignee: TO ORDER OF BANCO SANTANDER, S.A.\n\nNotify Party: Constructores Modernos SA\nCalle de Alcalá 527\n28027 Madrid, Spain\n\nVessel/Voyage: MV IBERIAN TRADER V.25176\nPort of Loading: Valencia, Spain\nPort of Discharge: Lisbon, Portugal\n\nDescription of Goods:\nPorcelain Floor Tiles\n2,000 Pallets\n\nLoading Details:\nLOT 1: 1,200 Pallets - Loaded on board June 18, 2025\nLOT 2: 800 Pallets - Loaded on board June 22, 2025\nTotal: 2,000 Pallets (Size 60x60cm, Premium Grade)\nShipped on board in apparent good order and condition\nFreight Collect\n\nTotal Packages: TWO THOUSAND (2,000) PALLETS ONLY\nGross Weight: 1,800,000 KGS\n\nOn Board Date: June 22, 2025 (Final Loading)\nDate of Issue: June 23, 2025\n\nNumber of Original Bs/L: THREE (3/3)\n\nPlace of Issue: Valencia, Spain\n\nFor MSC Mediterranean Shipping Company SA:\n___________________\nAgent"
+      },
+      "insurance_policy": {
+        "policy_number": "MAPFRE-ES-2025-9921",
+        "insured": "Cerámicas del Mediterráneo SL",
+        "insurance_amount": 313500.00,
+        "currency": "EUR",
+        "coverage": "INSTITUTE CARGO CLAUSES (A) PLUS WAR RISKS",
+        "goods_description": "PORCELAIN FLOOR TILES - 2,000 PALLETS, SIZE 60x60CM, PREMIUM GRADE",
+        "vessel": "MV IBERIAN TRADER V.25176",
+        "from": "Valencia, Spain",
+        "to": "Lisbon, Portugal",
+        "issue_date": "2025-06-17",
+        "claims_payable_at": "Madrid, Spain",
+        "raw_text": "INSURANCE POLICY\n\nPolicy No.: MAPFRE-ES-2025-9921\n\nAssured: Cerámicas del Mediterráneo SL\nPolígono Industrial El Pla, Villareal, Castellón, Spain\n\nInsured Amount: EUR 313,500.00\n\nCoverage: Institute Cargo Clauses (A) plus War Risks\n\nGoods: Porcelain Floor Tiles - 2,000 Pallets\nSize 60x60cm, Premium Grade\n\nVessel: MV IBERIAN TRADER V.25176\nFrom: Valencia, Spain\nTo: Lisbon, Portugal\n\nClaims Payable: Madrid, Spain\n\nDate: June 17, 2025\n\nFor MAPFRE:\n___________________\nUnderwriter"
+      },
+      "presentation_date": "2025-07-10",
+      "expected_result": {
+        "has_discrepancies": true,
+        "discrepancies": [
+          {
+            "document": "Bill of Lading",
+            "field": "Partial Shipment",
+            "description": "信用证明确规定'Partial shipments strictly prohibited'（禁止分批装运），但提单显示货物分两批装船：第一批1,200托盘于6月18日装船，第二批800托盘于6月22日装船。这明确构成了分批装运违规。",
+            "ucp_reference": "UCP600 Article 31(b)",
+            "severity": "严重"
+          },
+          {
+            "document": "Commercial Invoice",
+            "field": "Trade Terms",
+            "description": "信用证规定贸易术语为'FOB Valencia'，但发票显示贸易术语为'CIF Lisbon'。贸易术语的变更改变了买卖双方的费用、风险划分界限，构成明显的单证不符。",
+            "ucp_reference": "UCP600 Article 18(c)",
+            "severity": "严重"
+          },
+          {
+            "document": "Bill of Lading",
+            "field": "On Board Notation Consistency",
+            "description": "虽然提单最终显示装船日期为6月22日，但批注显示分两批装船（LOT 1和LOT 2），这与信用证禁止分批装运的要求直接冲突。根据UCP600 Article 31，如果信用证禁止分批装运，而提单显示货物在不同时间通过同一交通工具装运，仍视为分批装运。",
+            "ucp_reference": "UCP600 Article 31(b) and (c)",
+            "severity": "严重"
+          }
+        ],
+        "overall_assessment": "存在严重不符点。分批装运违规是实质性的违约行为，贸易术语的不符改变了合同基础。根据UCP600 Article 16，银行应当拒付。建议受益人联系申请人修改信用证条款或重新按信用证要求一次性装运货物。"
+      }
+    },
+    {
+      "case_id": "case_15",
+      "case_description": "综合隐蔽不符点测试：瑞士手表出口，包含明显不符点（金额超支）和隐蔽不符点（型号差异、保险条款细微差别）",
+      "letter_of_credit": {
+        "lc_number": "LC-CHF-LUXURY-2025-1107",
+        "issuing_bank": "Credit Suisse AG, Zurich",
+        "advising_bank": "UBS Switzerland AG, Geneva Branch",
+        "applicant": { 
+          "name": "Haute Horlogerie Distribution GmbH", 
+          "address": "Bahnhofstrasse 32, 8001 Zurich, Switzerland" 
+        },
+        "beneficiary": { 
+          "name": "Geneve Precision Watchmaking SA", 
+          "address": "Rue du Rhône 42, 1204 Geneva, Switzerland" 
+        },
+        "currency": "CHF",
+        "amount": 875000.00,
+        "amount_tolerance": "+/- 0%",
+        "goods_description": "SWISS MECHANICAL WRISTWATCHES - MODEL: CHRONOMASTER EL PRIMERO REFERENCE 03.2040.400/69.C494, 18K ROSE GOLD CASE, 150 PIECES TOTAL, MANUFACTURED IN GENEVA, SWITZERLAND, SWISS MADE CERTIFIED",
+        "latest_shipment_date": "2025-09-15",
+        "expiry_date": "2025-10-05",
+        "expiry_place": "Geneva, Switzerland",
+        "presentation_period": "15 days after shipment date",
+        "loading_port": "Geneva, Switzerland (Inland)",
+        "discharge_port": "Zurich, Switzerland (Inland)",
+        "trade_terms": "EXW Geneva",
+        "partial_shipment": "Allowed",
+        "transhipment": "Allowed",
+        "required_documents": [
+          "Commercial Invoice in duplicate",
+          "Air Waybill evidencing goods consigned to applicant",
+          "Insurance Certificate covering All Risks including theft and mysterious disappearance",
+          "Certificate of Authenticity from Federation of the Swiss Watch Industry FH",
+          "Packing List detailing serial numbers of each piece"
+        ],
+        "additional_conditions": [
+          "Goods must be model 03.2040.400/69.C494 exactly as stated",
+          "Insurance must cover Institute Cargo Clauses (A) plus theft and mysterious disappearance",
+          "Each watch must bear individual serial number engraved on case back"
+        ],
+        "raw_text": "MT700 ISSUE OF A DOCUMENTARY CREDIT\nSENDER: CRESCHEZXXX\nRECEIVER: UBSWCHZH80A\nSEQUENCE OF TOTAL: 27/1/1\nFORM OF DOC. CREDIT: 40A IRREVOCABLE\nDOC. CREDIT NUMBER: 20 LC-CHF-LUXURY-2025-1107\nDATE OF ISSUE: 31C 250815\nAPPLICABLE RULES: 40E UCP LATEST VERSION\nDATE AND PLACE OF EXPIRY: 31D 251005 GENEVA, SWITZERLAND\nAPPLICANT: 50 HAUTE HORLOGERIE DISTRIBUTION GMBH\nBAHNHOFSTRASSE 32\n8001 ZURICH, SWITZERLAND\nBENEFICIARY: 59 GENEVE PRECISION WATCHMAKING SA\nRUE DU RHÔNE 42\n1204 GENEVA, SWITZERLAND\nCURRENCY CODE, AMOUNT: 32B CHF875000,00\nAVAILABLE WITH/BY: 41D UBS SWITZERLAND AG, GENEVA BRANCH\nBY NEGOTIATION\nDRAFTS AT: 42C SIGHT\nDRAWEE: 42A CRESCHEZXXX\nPARTIAL SHIPMENTS: 43P ALLOWED\nTRANSSHIPMENT: 43T ALLOWED\nLOADING IN CHARGE: 44A GENEVA, SWITZERLAND (INLAND)\nFOR TRANSPORTATION TO: 44B ZURICH, SWITZERLAND (INLAND)\nLATEST DATE OF SHIPMENT: 44C 250915\nDESCRIPTION OF GOODS: 45A SWISS MECHANICAL WRISTWATCHES - MODEL: CHRONOMASTER EL PRIMERO REFERENCE 03.2040.400/69.C494, 18K ROSE GOLD CASE, 150 PIECES TOTAL, MANUFACTURED IN GENEVA, SWITZERLAND, SWISS MADE CERTIFIED\nTRADE TERMS: EXW GENEVA\nDOCUMENTS REQUIRED: 46A\n1. COMMERCIAL INVOICE IN DUPLICATE\n2. AIR WAYBILL EVIDENCING GOODS CONSIGNED TO APPLICANT\n3. INSURANCE CERTIFICATE COVERING ALL RISKS INCLUDING THEFT AND MYSTERIOUS DISAPPEARANCE\n4. CERTIFICATE OF AUTHENTICITY FROM FEDERATION OF THE SWISS WATCH INDUSTRY FH\n5. PACKING LIST DETAILING SERIAL NUMBERS OF EACH PIECE\nADDITIONAL CONDITIONS: 47A\nGOODS MUST BE MODEL 03.2040.400/69.C494 EXACTLY AS STATED\nINSURANCE MUST COVER INSTITUTE CARGO CLAUSES (A) PLUS THEFT AND MYSTERIOUS DISAPPEARANCE\nEACH WATCH MUST BEAR INDIVIDUAL SERIAL NUMBER ENGRAVED ON CASE BACK\nPRESENTATION PERIOD: 48 15 DAYS AFTER SHIPMENT DATE\nCONFIRMATION INSTRUCTIONS: 49 WITHOUT"
+      },
+      "commercial_invoice": {
+        "invoice_number": "GPW-2025-LUX-7733",
+        "invoice_date": "2025-09-10",
+        "issued_by": "Geneve Precision Watchmaking SA, Rue du Rhône 42, 1204 Geneva, Switzerland",
+        "issued_to": "Haute Horlogerie Distribution GmbH, Bahnhofstrasse 32, 8001 Zurich, Switzerland",
+        "currency": "CHF",
+        "goods": [
+          {
+            "description": "SWISS MECHANICAL WRISTWATCHES - MODEL: CHRONOMASTER EL PRIMERO REFERENCE 03.2040.400/69.C494, 18K ROSE GOLD CASE, 150 PIECES, MANUFACTURED IN GENEVA, SWITZERLAND, SWISS MADE CERTIFIED",
+            "quantity": 150,
+            "unit": "PIECES",
+            "unit_price": 5900.00,
+            "amount": 885000.00
+          }
+        ],
+        "total_amount": 885000.00,
+        "trade_terms": "EXW Geneva",
+        "raw_text": "GENEVE PRECISION WATCHMAKING SA\nRUE DU RHÔNE 42\n1204 GENEVA, SWITZERLAND\nCHE-123.456.789\n\nCOMMERCIAL INVOICE\n\nInvoice No.: GPW-2025-LUX-7733\nDate: September 10, 2025\n\nShipper: Geneve Precision Watchmaking SA\nRue du Rhône 42\n1204 Geneva, Switzerland\n\nConsignee: Haute Horlogerie Distribution GmbH\nBahnhofstrasse 32\n8001 Zurich, Switzerland\n\nAWB No.: 724-12345678 (Swiss WorldCargo)\n\nLC No.: LC-CHF-LUXURY-2025-1107\nIssuing Bank: Credit Suisse AG, Zurich\n\nDescription of Goods:\nSwiss Mechanical Wristwatches\nModel: Chronomaster El Primero\nReference: 03.2040.400/69.C494\n18K Rose Gold Case\n150 Pieces Total\nManufactured in Geneva, Switzerland\nSwiss Made Certified\n\nSerial Numbers: SN-2025-0451 to SN-2025-0600\n(Engraved on case back as per specification)\n\nUnit Price: CHF 5,900.00 per piece\nTotal Amount: CHF 885,000.00\n\nTotal Invoice Value: CHF 885,000.00\nTrade Terms: EXW Geneva\n\nWe certify that goods are genuine Swiss Made products.\n\nFor Geneve Precision Watchmaking SA:\n___________________\nExport Director"
+      },
+      "bill_of_lading": {
+        "bl_number": "AWB-724-12345678",
+        "shipper": "Geneve Precision Watchmaking SA, Rue du Rhône 42, 1204 Geneva, Switzerland",
+        "consignee": "Haute Horlogerie Distribution GmbH, Bahnhofstrasse 32, 8001 Zurich, Switzerland",
+        "notify_party": "Same as consignee",
+        "vessel": "SWISS WORLD CARGO FLIGHT LX1234",
+        "voyage": "N/A",
+        "port_of_loading": "Geneva Airport (GVA), Switzerland",
+        "port_of_discharge": "Zurich Airport (ZRH), Switzerland",
+        "onboard_date": "2025-09-12",
+        "issue_date": "2025-09-12",
+        "goods_description": "SWISS MECHANICAL WRISTWATCHES - MODEL: CHRONOMASTER EL PRIMERO REF 03.2040.400/69.C494, 150 PIECES IN 3 SECURE CASES, HIGH VALUE CARGO, CONSIGNEE'S USE ONLY",
+        "number_of_packages": "THREE (3) SECURITY CASES",
+        "gross_weight": "45.00 KGS",
+        "freight": "PREPAID",
+        "number_of_originals": "3/3",
+        "clean_onboard": true,
+        "carrier_signature": "SWISS INTERNATIONAL AIR LINES AS CARRIER",
+        "raw_text": "AIR WAYBILL\n\nAWB No.: 724-12345678\nIssued by: Swiss WorldCargo\n\nShipper: Geneve Precision Watchmaking SA\nRue du Rhône 42\n1204 Geneva, Switzerland\n\nConsignee: Haute Horlogerie Distribution GmbH\nBahnhofstrasse 32\n8001 Zurich, Switzerland\n\nAgent's IATA Code: 724-1234\n\nAirport of Departure: Geneva (GVA), Switzerland\nAirport of Destination: Zurich (ZRH), Switzerland\n\nFlight/Date: LX1234 / September 12, 2025\n\nHandling Information: HIGH VALUE CARGO - WATCHES\nSECURITY SEAL: GPW-2025-SECURE\n\nDescription of Goods:\nSwiss Mechanical Wristwatches\nModel: Chronomaster El Primero\nRef: 03.2040.400/69.C494\n150 Pieces\nPacked in 3 High Security Cases\n\nTotal Pieces: 3\nGross Weight: 45.00 KGS\nChargeable Weight: 45.00 KGS\n\nRate Class: Q (High Value Cargo)\nCharges: Prepaid\n\nDeclared Value for Carriage: NVD\nDeclared Value for Customs: CHF 885,000.00\n\nDate: September 12, 2025\nSignature of Shipper or Agent: ___________________\nExecuted on: September 12, 2025\nAt: Geneva, Switzerland\n\nFor Swiss International Air Lines:\n___________________\nAuthorized Agent"
+      },
+      "insurance_policy": {
+        "policy_number": "ZURICH-CHF-2025-1107-WATCH",
+        "insured": "Geneve Precision Watchmaking SA",
+        "insurance_amount": 885000.00,
+        "currency": "CHF",
+        "coverage": "INSTITUTE CARGO CLAUSES (A) EXCLUDING MYSTERIOUS DISAPPEARANCE",
+        "goods_description": "SWISS MECHANICAL WRISTWATCHES - MODEL: CHRONOMASTER EL PRIMERO REF 03.2040.400/69.C494, 150 PIECES, 18K ROSE GOLD",
+        "vessel": "SWISS WORLD CARGO FLIGHT LX1234",
+        "from": "Geneva, Switzerland",
+        "to": "Zurich, Switzerland",
+        "issue_date": "2025-09-11",
+        "claims_payable_at": "Geneva, Switzerland",
+        "raw_text": "INSURANCE CERTIFICATE\n\nCertificate No.: ZURICH-CHF-2025-1107-WATCH\n\nAssured: Geneve Precision Watchmaking SA\nRue du Rhône 42, 1204 Geneva, Switzerland\n\nInsured Amount: CHF 885,000.00\n\nInsurance Coverage:\nInstitute Cargo Clauses (A) dated 01/01/82\nEXCLUDING mysterious disappearance and unexplained loss\n\nGoods Description:\nSwiss Mechanical Wristwatches\nModel: Chronomaster El Primero\nReference: 03.2040.400/69.C494\n150 Pieces, 18K Rose Gold\n\nConveyance: Swiss WorldCargo Flight LX1234\nFrom: Geneva, Switzerland\nTo: Zurich, Switzerland\n\nSpecial Conditions:\nCoverage limited to physical loss or damage from external causes\nTheft from unattended vehicle excluded\nMysterious disappearance excluded\n\nClaims Payable At: Geneva, Switzerland at office of Zurich Insurance Company Ltd\n\nDate of Issue: September 11, 2025\n\nFor Zurich Insurance Company Ltd:\n___________________\nAuthorized Underwriter"
+      },
+      "presentation_date": "2025-09-20",
+      "expected_result": {
+        "has_discrepancies": true,
+        "discrepancies": [
+          {
+            "document": "Commercial Invoice",
+            "field": "Invoice Amount",
+            "description": "信用证金额为CHF 875,000.00且规定'+/- 0%'（不允许增减），但发票金额为CHF 885,000.00（150只手表×单价CHF 5,900.00），超出信用证金额CHF 10,000.00，构成明显的金额超支不符点。",
+            "ucp_reference": "UCP600 Article 18(b)",
+            "severity": "严重"
+          },
+          {
+            "document": "Commercial Invoice",
+            "field": "Goods Description - Model Reference",
+            "description": "信用证明确要求货物型号必须为'CHRONOMASTER EL PRIMERO REFERENCE 03.2040.400/69.C494'（完全一致），但发票显示型号为'Chronomaster El Primero Reference 03.2040.400/69.C494'。经仔细比对，发票在描述中使用了小写'Chronomaster'而非大写'CHRONOMASTER'，且'REFERENCE'拼写正确，但信用证要求完全一致的型号描述，任何大小写差异或额外/缺失空格都可能构成不符。更关键的是，发票未明确强调型号必须'exactly as stated'，且保险单显示的是'Ref'缩写而非完整'Reference'。",
+            "ucp_reference": "UCP600 Article 18(c)",
+            "severity": "隐蔽"
+          },
+          {
+            "document": "Insurance Policy",
+            "field": "Coverage Terms",
+            "description": "信用证明确要求保险必须覆盖'All Risks including theft and mysterious disappearance'（所有风险包括盗窃和神秘失踪），且附加条件规定'Insurance must cover Institute Cargo Clauses (A) plus theft and mysterious disappearance'。但保险单显示承保范围为'Institute Cargo Clauses (A) EXCLUDING mysterious disappearance and unexplained loss'（除外神秘失踪），明确排除了'神秘失踪'的承保，这与信用证要求完全相反，构成隐蔽但严重的不符点。",
+            "ucp_reference": "UCP600 Article 28(g)(ii)",
+            "severity": "隐蔽严重"
+          },
+          {
+            "document": "Insurance Policy",
+            "field": "Insurance Amount",
+            "description": "发票金额为CHF 885,000.00，但保险金额仅为CHF 885,000.00（即发票金额的100%）。虽然信用证未明确规定投保加成比例，但根据UCP600 Article 28(f)(ii)，如果信用证未规定保险金额，则保险金额应为CIF或CIP价值的110%。由于贸易术语为EXW，保险金额应至少为发票金额的110%（即CHF 973,500.00），除非信用证另有规定。然而此处保险金额仅为100%，且由于发票金额已超过信用证金额，保险金额基础本身也存在争议。",
+            "ucp_reference": "UCP600 Article 28(f)(ii)",
+            "severity": "一般"
+          }
+        ],
+        "overall_assessment": "存在多处不符点，包括明显的金额超支（CHF 10,000）、隐蔽的保险条款不符（除外神秘失踪而非包含）以及可能存在的货描细微差异。这些不符点中，金额超支和保险条款不符都是实质性的，银行应当拒付。受益人需修改发票金额至信用证限额内，并更正保险单条款以符合信用证要求。"
+      }
+    }
+  ]
+}

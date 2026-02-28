@@ -1,0 +1,43 @@
+=== UCP600 Article 15 — Complying Presentation ===
+=== 跟单信用证统一惯例第 600 号出版物 第十五条 — 相符交单 ===
+
+【英文原文】
+
+a. When an issuing bank determines that a presentation is complying, it must honour.
+
+b. When a confirming bank determines that a presentation is complying, it must honour or negotiate and forward the documents to the issuing bank.
+
+c. When a nominated bank determines that a presentation is complying, it must honour or negotiate, as applicable, and forward the documents to the confirming bank or issuing bank.
+
+【中文翻译】
+
+a. 当开证行确定交单相符时，必须承付。
+
+b. 当保兑行确定交单相符时，必须承付或者议付并将单据转递给开证行。
+
+c. 当指定银行确定交单相符并承付或议付时，必须将单据转递给保兑行或开证行。
+
+【关键审单要点】
+
+1. 开证行的义务：确定交单相符时必须承付（Honour）
+   - 即期付款信用证：即期付款
+   - 延期付款信用证：承诺延期付款并在到期日付款
+   - 承兑信用证：承兑汇票并在到期日付款
+
+2. 保兑行的义务：确定交单相符时必须承付或议付
+   - 保兑行有选择权：可以承付或议付
+   - 议付时必须无追索权地议付
+   - 必须将单据转递给开证行
+
+3. 指定银行的义务：确定交单相符时必须承付或议付（如信用证允许）
+   - 承付或议付后将单据转递给保兑行（如有）或开证行
+   - 无保兑的指定银行有权决定是否承付或议付
+
+4. "确定交单相符"是承付/议付的前提条件
+
+5. 银行一旦确定交单相符并承付/议付，即承担相应的付款责任
+
+6. 如果单据在转递过程中丢失，开证行/保兑行仍须承付或议付（第35条）
+
+【主题标签】
+相符交单, 承付, 议付, 开证行, 保兑行, 指定银行, 付款义务, 转递单据

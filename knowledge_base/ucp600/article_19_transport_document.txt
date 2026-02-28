@@ -1,0 +1,79 @@
+=== UCP600 Article 19 — Transport Document Covering at Least Two Different Modes of Transport ===
+=== 跟单信用证统一惯例第 600 号出版物 第十九条 — 涵盖至少两种不同运输方式的运输单据 ===
+
+【英文原文】
+
+a. A transport document covering at least two different modes of transport (multimodal or combined transport document), however named, must appear to:
+i. indicate the name of the carrier and be signed by:
+* the carrier or a named agent for or on behalf of the carrier, or
+* the master or a named agent for or on behalf of the master.
+Any signature by the carrier, master or agent must be identified as that of the carrier, master or agent.
+Any signature by an agent must indicate whether the agent has signed for or on behalf of the carrier or for or on behalf of the master;
+ii. indicate that the goods have been dispatched, taken in charge or shipped on board at the place stated in the credit, by:
+* pre-printed wording, or
+* a stamp or notation indicating the date on which the goods have been dispatched, taken in charge or shipped on board.
+The date of issuance of the transport document will be deemed to be the date of dispatch, taking in charge or shipped on board, and the date of shipment, unless the transport document contains a specific notation indicating the date of dispatch, taking in charge or shipped on board, in which case the date stated in the notation will be deemed to be the date of dispatch, taking in charge or shipped on board and the date of shipment.
+iii. indicate the place of dispatch, taking in charge or shipment and the place of final destination stated in the credit, even if:
+(a) the transport document states, in addition, a different place of dispatch, taking in charge or shipment or place of final destination, or
+(b) the transport document contains the indication "intended" or similar qualification in relation to the vessel, loading port or discharge port.
+iv. be the sole original transport document or, if issued in more than one original, be the full set as indicated on the transport document.
+v. contain terms and conditions of carriage or make reference to another source containing the terms and conditions of carriage (short form or blank back transport document). Contents of terms and conditions of carriage will not be examined.
+vi. contain no indication that it is subject to a charter party.
+
+b. For the purpose of this article, transhipment means unloading from one means of conveyance and reloading to another means of conveyance (whether or not in different modes of transport) during the carriage from the place of dispatch, taking in charge or shipment to the place of final destination stated in the credit.
+
+c. i. A transport document may indicate that the goods will or may be transhipped provided that the entire carriage is covered by one and the same transport document.
+ii. A transport document indicating that transhipment will or may take place is acceptable, even if the credit prohibits transhipment.
+
+d. Clauses in a transport document stating that the carrier reserves the right to tranship will be disregarded.
+
+【中文翻译】
+
+a. 涵盖至少两种不同运输方式的运输单据（多式或联合运输单据），无论名称如何，必须看似：
+i. 表明承运人名称并由以下人员签署：
+* 承运人或其具名代理人，或
+* 船长或其具名代理人。
+承运人、船长或代理人的任何签字，必须标明其承运人、船长或代理人的身份。
+代理人签字必须表明其系代表承运人还是船长签字。
+ii. 通过以下方式表明货运站物已经在信用证规定的地点发送、接管或已装船。
+* 事先印就的文字，或者
+* 表明货物已经被发送、接管或装船日期的印戳或批注。
+运输单据的出具日期将被视为发送、接管或装船的日期，也即发运的日期。然而如单据以印戳或批注的方式表明了发送、接管或装船日期，该日期将被视为发运日期。
+iii. 表明信用证规定的发送、接管或发运地点，以及最终目的地，即使：
+(a) 该运输单据另外还载明了一个不同的发送、接管或发运地点或最终目的地，或者，
+(b) 该运输单据载有"预期的"或类似的关于船只，装货港或卸货港的限定语。
+iv. 为唯一的正本运输单据，或者，如果出具为多份正本，则为运输单据中表明的全套单据。
+v. 载有承运条款和条件，或提示承运条款和条件参见别处（简式/背面空白的运输单据）。银行将不审核承运条款和条件的内容。
+vi. 未表明受租船合同约束。
+
+b. 就本条而言，转运指在从信用证规定的发送、接管或者发运地点最终目的地的运输过程中从某一运输工具上卸下货物并装上另一运输工具的行为（无论其是否为不同的运输方式）。
+
+c. i. 运输单据可以表明货物将要或可能被转运，只要全程运输由同一运输单据涵盖。
+ii. 即使信用证禁止转运，注明将要或者可能发生转运的运输单据仍可接受。
+
+d. 运输单据中声明承运人保留转运权利的条款将被不予理会。
+
+【关键审单要点】
+
+1. 适用于涵盖至少两种不同运输方式的多式联运单据
+
+2. 签署要求：承运人/船长/其代理人签署，需标明身份
+
+3. 发运日期：以印戳或批注日期为准，无批注则以出具日期为准
+
+4. 接管地/发运地和最终目的地必须与信用证规定一致
+
+5. 可接受"预期船只"或"预期装货港"等限定语
+
+6. 必须是正本运输单据或全套正本单据
+
+7. 不得表明受租船合同约束
+
+8. 即使信用证禁止转运，注明转运的多式联运单据仍可接受（集装箱运输）
+
+9. 银行不审核承运条款和条件的内容
+
+10. 与第20条（提单）的主要区别：适用多种运输方式，不限制于海运
+
+【主题标签】
+多式联运单据, 联合运输单据, 承运人, 接管, 发送, 装船, 转运, 集装箱, 正本单据, 多式联运

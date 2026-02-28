@@ -1,0 +1,96 @@
+=== UCP600 Article 2 — Definitions ===
+=== 跟单信用证统一惯例第 600 号出版物 第二条 — 定义 ===
+
+【英文原文】
+
+For the purpose of these rules:
+
+Advising bank means the bank that advises the credit at the request of the issuing bank.
+
+Applicant means the party on whose request the credit is issued.
+
+Banking day means a day on which a bank is regularly open at the place at which an act subject to these rules is to be performed.
+
+Beneficiary means the party in whose favour a credit is issued.
+
+Complying presentation means a presentation that is in accordance with the terms and conditions of the credit, the applicable provisions of these rules and international standard banking practice.
+
+Confirmation means a definite undertaking of the confirming bank, in addition to that of the issuing bank, to honour or negotiate a complying presentation.
+
+Confirming bank means the bank that adds its confirmation to a credit upon the issuing bank's authorization or request.
+
+Credit means any arrangement, however named or described, that is irrevocable and thereby constitutes a definite undertaking of the issuing bank to honour a complying presentation.
+
+Honour means:
+a. to pay at sight if the credit is available by sight payment.
+b. to incur a deferred payment undertaking and pay at maturity if the credit is available by deferred payment.
+c. to accept a bill of exchange ("draft") drawn by the beneficiary and pay at maturity if the credit is available by acceptance.
+
+Issuing bank means the bank that issues a credit at the request of an applicant or on its own behalf.
+
+Negotiation means the purchase by the nominated bank of drafts (drawn on a bank other than the nominated bank) and/or documents under a complying presentation, by advancing or agreeing to advance funds to the beneficiary on or before the banking day on which reimbursement is due to the nominated bank.
+
+Nominated bank means the bank with which the credit is available or any bank in the case of a credit available with any bank.
+
+Presentation means either the delivery of documents under a credit to the issuing bank or nominated bank or the documents so delivered.
+
+Presenter means a beneficiary, bank or other party that makes a presentation.
+
+【中文翻译】
+
+就本惯例而言：
+
+通知行 指应开证行的要求通知信用证的银行。
+
+申请人 指要求开立信用证的一方（通常是进口人，也就是买卖合同的买方）。
+
+银行工作日 指银行在其履行受本惯例约束的行为的地点通常开业的一天。
+
+受益人 指接受信用证并享受其利益的一方。
+
+相符交单 指与信用证条款、本惯例的相关适用条款以及国际标准银行实务一致的交单。
+
+保兑 指保兑行在开证行承诺之外做出的承付或议付相符交单的确定承诺。
+
+保兑行 指根据开证行的授权或要求对信用证加具保兑，在开证行承诺之外作出承付或议付相符交单的确定承诺的银行。
+
+信用证 指一项不可撤销的安排，无论其名称或描述如何，该项安排构成开证行对相符交单予以承付的确定承诺。
+
+承付 指：
+a. 如果信用证为即期付款信用证，则即期付款。
+b. 如果信用证为延期付款信用证，则承诺延期付款并在承诺到期日付款。
+c. 如果信用证为承兑信用证，则承兑受益人开出的汇票并在汇票到期日付款。
+
+开证行 指应申请人要求或者代表自己开出信用证的银行（一般是进口地银行）。
+
+议付 指指定银行在相符交单下，在其应获偿付的银行工作日当天或之前向受益人预付或者同意预付款项，从而购买汇票（其付款人为指定银行以外的其他银行）及/或单据的行为。
+
+指定银行 指信用证可在其处兑用的银行，如信用证可在任一银行兑用，则任何银行均为指定银行。
+
+交单 指向开证行或指定银行提交信用证项下单据的行为，或指按此方式提交的单据。
+
+交单人 指实施交单行为的受益人、银行或其他人。
+
+【关键审单要点】
+
+1. 相符交单（Complying presentation）是核心概念，需同时满足：
+   - 信用证条款
+   - UCP600相关适用条款
+   - 国际标准银行实务（ISBP）
+
+2. 信用证均为不可撤销，无需另行标明
+
+3. 银行工作日是计算审单期限的基础
+
+4. 承付的三种方式：即期付款、延期付款、承兑
+
+5. 议付的定义强调：购买汇票和/或单据，预付或同意预付款项
+
+6. 指定银行是信用证可在其处兑用的银行
+
+7. 交单人可以是受益人、银行或其他任何人
+
+8. 保兑行承担独立于开证行的确定付款责任
+
+【主题标签】
+定义, 相符交单, 信用证, 开证行, 保兑行, 指定银行, 通知行, 受益人, 申请人, 承付, 议付, 交单, 银行工作日
