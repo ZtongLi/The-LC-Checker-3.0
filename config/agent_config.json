@@ -1,0 +1,63 @@
+{
+  "_comment": "The-LC-Checker V3 多智能体增强配置",
+
+  "version": "3.0",
+
+  "agents": {
+    "planner": {
+      "enabled": true,
+      "max_terms": 10,
+      "temperature": 0.2
+    },
+    "knowledge": {
+      "enabled": true,
+      "chromadb_top_k": 5,
+      "temperature": 0.1
+    },
+    "reflection": {
+      "enabled": true,
+      "temperature": 0.1,
+      "dimensions": [
+        "field_accuracy",
+        "ucp_reference_correctness",
+        "severity_reasonableness",
+        "missing_check"
+      ]
+    }
+  },
+
+  "contrastive_examples": {
+    "enabled": true,
+    "data_dir": "contrastive_data",
+    "max_positive": 5,
+    "max_negative": 5,
+    "max_boundary": 3
+  },
+
+  "output_checker": {
+    "enabled": true,
+    "max_loop": 5,
+    "use_json_repair": true
+  },
+
+  "llm": {
+    "model_name": "qwen2.5:14b",
+    "base_url_env": "OPENAI_API_BASE",
+    "api_key_env": "OPENAI_API_KEY",
+    "default_base_url": "http://localhost:11434/v1",
+    "default_api_key": "ollama",
+    "timeout": 120
+  },
+
+  "fallback": {
+    "on_planner_fail": "skip",
+    "on_knowledge_fail": "skip",
+    "on_reflection_fail": "use_original",
+    "on_all_fail": "fallback_to_v2"
+  },
+
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  }
+}

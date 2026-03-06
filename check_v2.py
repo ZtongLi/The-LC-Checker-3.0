@@ -379,6 +379,173 @@ def check_calculations(lc, invoice, bl, insurance, presentation_date):
         else:
             compliant_items.append("保险单 — 签发日期早于装运日期")
 
+    # ⑦ 单据份数检查
+    required_docs = lc.get("required_documents", "")
+    if isinstance(required_docs, list):
+        required_docs_text = " ".join(str(d) for d in required_docs)
+    else:
+        required_docs_text = str(required_docs)
+    req_lower = required_docs_text.lower()
+
+    # 检查发票份数
+    inv_copies_required = 0
+    if "triplicate" in req_lower or "3/3" in req_lower.replace(" ", ""):
+        inv_copies_required = 3
+    elif "duplicate" in req_lower or "2/2" in req_lower.replace(" ", ""):
+        inv_copies_required = 2
+    # 也检查 lc 的其他字段
+    for field_val in [str(lc.get("documents_required", "")), str(lc.get("document_requirements", ""))]:
+        fv_lower = field_val.lower()
+        if "invoice" in fv_lower:
+            if "triplicate" in fv_lower or "3/3" in fv_lower:
+                inv_copies_required = 3
+            elif "duplicate" in fv_lower or "2/2" in fv_lower:
+                inv_copies_required = 2
+
+    if inv_copies_required > 0:
+        import re as _re_inv
+        inv_originals = invoice.get("number_of_originals", invoice.get("copies", 0))
+        if isinstance(inv_originals, str):
+            nums = _re_inv.findall(r'\d+', str(inv_originals))
+            inv_originals = int(nums[0]) if nums else 0
+        # 如果字段里没有，从 raw_text 提取
+        if not inv_originals or inv_originals == 0:
+            raw = str(invoice.get("raw_text", "")).lower()
+            m = _re_inv.search(r'number of original.*?\((\d+)\)', raw)
+            if m:
+                inv_originals = int(m.group(1))
+            else:
+                m2 = _re_inv.search(r'(\d+)\s*\)?\s*original', raw)
+                if m2:
+                    inv_originals = int(m2.group(1))
+                else:
+                    word_map = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6}
+                    for word, num in word_map.items():
+                        if _re_inv.search(word + r'.*original', raw):
+                            inv_originals = num
+                            break
+        if inv_originals > 0 and inv_originals < inv_copies_required:
+            discrepancies.append({
+                "document": "商业发票",
+                "field": "份数",
+                "lc_requirement": f"要求 {inv_copies_required} 份正本（triplicate）",
+                "doc_shows": f"仅提供 {inv_originals} 份正本",
+                "description": f"发票份数不足：信用证要求 {inv_copies_required} 份正本，实际仅提供 {inv_originals} 份",
+                "ucp_reference": "UCP600 Article 17(a)",
+                "severity": "严重"
+            })
+        elif inv_originals >= inv_copies_required:
+            compliant_items.append(f"商业发票 — 份数满足要求（{inv_originals}/{inv_copies_required}）")
+        else:
+            compliant_items.append("商业发票 — 份数：无法确定实际份数")
+
+    # 检查提单份数（full set）
+    bl_full_set_required = False
+    bl_copies_required = 0
+    for field_val in [required_docs_text, str(lc.get("documents_required", "")), str(lc.get("document_requirements", ""))]:
+        fv_lower = field_val.lower()
+        if "full set" in fv_lower or "3/3" in fv_lower:
+            bl_full_set_required = True
+            bl_copies_required = 3
+        elif "2/3" in fv_lower:
+            bl_copies_required = 2
+
+    bl_originals = bl.get("number_of_originals", bl.get("originals", 0))
+    if isinstance(bl_originals, str):
+        import re as _re2
+        nums2 = _re2.findall(r'\d+', str(bl_originals))
+        bl_originals = int(nums2[0]) if nums2 else 0
+
+    if bl_copies_required > 0 and bl_originals > 0 and bl_originals < bl_copies_required:
+        discrepancies.append({
+            "document": "提单",
+            "field": "份数",
+            "lc_requirement": f"要求全套 {bl_copies_required} 份正本提单（full set）" if bl_full_set_required else f"要求 {bl_copies_required} 份正本提单",
+            "doc_shows": f"仅提供 {bl_originals} 份正本",
+            "description": f"提单份数不足：信用证要求{'全套' if bl_full_set_required else ''} {bl_copies_required} 份正本，实际仅提供 {bl_originals} 份",
+            "ucp_reference": "UCP600 Article 20(a)(iv)",
+            "severity": "严重"
+        })
+    elif bl_copies_required > 0:
+        compliant_items.append(f"提单 — 份数满足要求（{bl_originals}/{bl_copies_required}）")
+
+    # ⑧ 贸易术语检查
+    lc_trade = lc.get("trade_terms", lc.get("incoterms", "")).strip()
+    inv_trade = invoice.get("trade_terms", invoice.get("incoterms", "")).strip()
+
+    # 也从货物描述中提取贸易术语
+    if not lc_trade:
+        goods_desc = str(lc.get("goods_description", ""))
+        import re as _re3
+        trade_match = _re3.search(r'\b(FOB|CIF|CFR|CIP|FCA|EXW|DAP|DDP|FAS|CPT|DAT|DPU)\b', goods_desc, _re3.IGNORECASE)
+        if trade_match:
+            lc_trade = trade_match.group(0).upper()
+
+    if not inv_trade:
+        inv_desc = str(invoice.get("goods_description", invoice.get("description", "")))
+        import re as _re4
+        trade_match2 = _re4.search(r'\b(FOB|CIF|CFR|CIP|FCA|EXW|DAP|DDP|FAS|CPT|DAT|DPU)\b', inv_desc, _re4.IGNORECASE)
+        if trade_match2:
+            inv_trade = trade_match2.group(0).upper()
+
+    if lc_trade and inv_trade:
+        # 提取术语类型（如 FOB SHANGHAI 中的 FOB）
+        lc_term = lc_trade.split()[0].upper() if lc_trade else ""
+        inv_term = inv_trade.split()[0].upper() if inv_trade else ""
+        if lc_term and inv_term and lc_term != inv_term:
+            discrepancies.append({
+                "document": "商业发票",
+                "field": "贸易术语",
+                "lc_requirement": lc_trade,
+                "doc_shows": inv_trade,
+                "description": f"贸易术语不一致：信用证要求 {lc_trade}，发票显示 {inv_trade}",
+                "ucp_reference": "UCP600 Article 18(c)",
+                "severity": "严重"
+            })
+        else:
+            compliant_items.append(f"商业发票 — 贸易术语一致（{lc_trade}）")
+    elif lc_trade and not inv_trade:
+        compliant_items.append("商业发票 — 贸易术语：发票未明确标注（待AI审核）")
+
+
+    # ⑨ 货物描述精确匹配检查（大小写敏感）
+    import re as _re_goods
+    lc_raw = str(lc.get("raw_text", ""))
+    inv_raw = str(invoice.get("raw_text", ""))
+    lc_goods_desc = lc.get("goods_description", "")
+    
+    # 从发票获取货物描述
+    inv_goods_desc = ""
+    inv_goods_list = invoice.get("goods", [])
+    if isinstance(inv_goods_list, list) and inv_goods_list:
+        inv_goods_desc = inv_goods_list[0].get("description", "")
+    if not inv_goods_desc:
+        inv_goods_desc = invoice.get("goods_description", "")
+    
+    # 检查是否要求精确匹配
+    exact_required = "exactly as stated" in lc_raw.lower() or "exactly as per" in lc_raw.lower()
+    
+    if lc_goods_desc and inv_raw:
+        # 提取型号信息
+        model_match = _re_goods.search(r'MODEL[:\s]+([A-Za-z0-9\s\-\.\/]+?)(?:,|$)', lc_goods_desc)
+        if model_match:
+            lc_model = model_match.group(1).strip()
+            # 在发票 raw_text 中查找对应的型号行
+            inv_model_match = _re_goods.search(r'[Mm]odel[:\s]+([A-Za-z0-9\s\-\.\/]+?)(?:\n|,|$)', inv_raw)
+            if inv_model_match:
+                inv_model = inv_model_match.group(1).strip()
+                # 如果语义相同但大小写不同
+                if lc_model.lower() == inv_model.lower() and lc_model != inv_model:
+                    discrepancies.append({
+                        "document": "商业发票",
+                        "field": "货物描述",
+                        "lc_requirement": f"MODEL: {lc_model}" + (" (EXACTLY AS STATED)" if exact_required else ""),
+                        "doc_shows": f"Model: {inv_model}",
+                        "description": f"型号描述大小写不一致：信用证为 \"{lc_model}\"，发票为 \"{inv_model}\"" + ("。信用证要求 EXACTLY AS STATED" if exact_required else ""),
+                        "ucp_reference": "UCP600 Article 18(c)",
+                        "severity": "一般" if not exact_required else "严重"
+                    })
+
     return discrepancies, compliant_items
 
 
