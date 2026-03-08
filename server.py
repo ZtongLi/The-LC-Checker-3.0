@@ -1,7 +1,15 @@
 """
-信用证智能审单系统 — 后端 API 服务
+信用证智能审单系统 — 后端 API 服务，信用证智能审单系统的后端 API 服务入口
 """
 import os
+
+# ============================================================
+# 关键：在导入任何 HuggingFace 相关库之前，设置离线模式
+# 必须在文件最开头设置！
+# ============================================================
+os.environ["HF_HUB_OFFLINE"] = "1"
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
+os.environ["HF_DATASETS_OFFLINE"] = "1"
 import json
 import shutil
 from datetime import datetime
@@ -61,7 +69,7 @@ async def health_check():
 
 
 # ============================================================
-# API 接口 2：完整审核
+# API 接口 2：完整审核（支持 V2/V3 模式选择）
 # ============================================================
 @app.post("/api/review")
 async def review_documents(
@@ -69,11 +77,16 @@ async def review_documents(
     invoice_file: UploadFile = File(...),
     bl_file: UploadFile = File(...),
     insurance_file: UploadFile = File(...),
-    presentation_date: str = Form(...)
+    presentation_date: str = Form(...),
+    review_mode: str = Form("v2")  # v2: 快速审核, v3: 深度审核
 ):
     """
-    接收 4 份单据文件 + 交单日期，返回审核结果
+    接收 4 份单据文件 + 交单日期 + 审核模式，返回审核结果
+    review_mode: v2 (快速审核) | v3 (深度审核，多智能体)
     """
+    print(f"\n{'='*70}")
+    print(f"  收到审核请求 - 模式: {review_mode.upper()}")
+    print(f"{'='*70}\n")
     try:
         # ============================================================
         # 阶段一：保存上传文件
@@ -136,27 +149,48 @@ async def review_documents(
             )
 
         # ============================================================
-        # 阶段三：审核
+        # 阶段三：审核（根据 review_mode 选择 V2 或 V3）
         # ============================================================
         
-        # 第一层：规则引擎
-        steps.append({"step": "规则引擎审核", "status": "processing"})
-        rule_discrepancies, compliant_items = check_calculations(
-            lc_data, inv_data, bl_data, ins_data, presentation_date
-        )
-        steps[-1]["status"] = "done"
+        if review_mode == "v3":
+            # V3 深度审核：多智能体 + 对比学习
+            print("🚀 使用 V3 深度审核（多智能体）...")
+            from v3agent import review_documents
+            
+            steps.append({"step": "多智能体预理解", "status": "processing"})
+            v3_result = review_documents(
+                lc_data, inv_data, bl_data, ins_data, presentation_date
+            )
+            steps[-1]["status"] = "done"
+            
+            all_discrepancies = v3_result.discrepancies
+            compliant_items = v3_result.compliant_items
+            review_version = "v3_kdr_agent"
+            
+        else:
+            # V2 快速审核：规则引擎 + AI
+            print("⚡ 使用 V2 快速审核...")
+            
+            # 第一层：规则引擎
+            steps.append({"step": "规则引擎审核", "status": "processing"})
+            rule_discrepancies, compliant_items = check_calculations(
+                lc_data, inv_data, bl_data, ins_data, presentation_date
+            )
+            steps[-1]["status"] = "done"
 
-        # 第二层：AI 全面审核
-        steps.append({"step": "AI 全面审核", "status": "processing"})
-        ai_discrepancies = ai_full_review(
-            lc_data, inv_data, bl_data, ins_data, presentation_date
-        )
-        steps[-1]["status"] = "done"
+            # 第二层：AI 全面审核
+            steps.append({"step": "AI 全面审核", "status": "processing"})
+            ai_discrepancies = ai_full_review(
+                lc_data, inv_data, bl_data, ins_data, presentation_date
+            )
+            steps[-1]["status"] = "done"
 
-        # 第三层：合并去重
-        steps.append({"step": "合并去重", "status": "processing"})
-        all_discrepancies = merge_discrepancies(rule_discrepancies, ai_discrepancies)
-        steps[-1]["status"] = "done"
+            # 第三层：合并去重
+            steps.append({"step": "合并去重", "status": "processing"})
+            all_discrepancies = merge_discrepancies(rule_discrepancies, ai_discrepancies)
+            steps[-1]["status"] = "done"
+            
+            review_version = "v2_standard"
 
         # ============================================================
         # 阶段四：整理返回结果
@@ -221,6 +255,8 @@ async def review_documents(
         # 返回 JSON
         return {
             "success": True,
+            "review_mode": review_mode,
+            "review_version": review_version,
             "summary": {
                 "lc_number": lc_data.get("lc_number", "N/A"),
                 "lc_amount": f"{lc_data.get('currency', '')} {lc_data.get('amount', 0):,.2f}",
